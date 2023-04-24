@@ -1,0 +1,23 @@
+{
+    "name": "@hicksy/arc-plugin-sandbox-stream",
+    "version": "1.0.0",
+    "description": "This plugin enables developers to use DynamoDB streams locally in their arc or enhance sandbox environment",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hicksy/arc-plugin-sandbox-stream.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hicksy/arc-plugin-sandbox-stream/issues"
+    },
+    "homepage": "https://github.com/hicksy/arc-plugin-sandbox-stream",
+    "author": "Martin Hicks <hello@martinhicks.net>",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@architect/functions": "^5.4.0",
+        "aws-sdk": "^2.1363.0"
+    }
+}
