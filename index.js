@@ -26,10 +26,10 @@ module.exports = {
         }
       }
 
-      if(inventory.inv.aws.region !== 'ddblocal') {
-        console.error('@hicksy/arc-plugin-sandbox-table-streams: AWS region not set to ddblocal. Plugin @hicksy/arc-plugin-sandbox-table-streams is only compatible with ddblocal. DynamoDBLocal streams will not invoke your table stream functions.')
-        return;
-      }
+      // if(inventory.inv.aws.region !== 'ddblocal') {
+      //   console.error('@hicksy/arc-plugin-sandbox-table-streams: AWS region not set to ddblocal. Plugin @hicksy/arc-plugin-sandbox-table-streams is only compatible with ddblocal. DynamoDBLocal streams will not invoke your table stream functions.')
+      //   return;
+      // }
 
       const client = await _arcFunctions.tables();
       const dynamodb = new AWS.DynamoDB({region: inventory.inv.aws.region, endpoint: `http://localhost:${process.env.ARC_TABLES_PORT}`});  

@@ -1,6 +1,6 @@
 {
     "name": "@hicksy/arc-plugin-sandbox-stream",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "This plugin enables developers to use DynamoDB streams locally in their arc or enhance sandbox environment",
     "main": "index.js",
     "scripts": {
