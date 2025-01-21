@@ -44,7 +44,7 @@ module.exports = {
           invoke({
             pragma: 'tables-streams',
             name: tblName,
-            payload: data.Records,
+            payload: data,
     
           });
         }

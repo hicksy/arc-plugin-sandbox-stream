@@ -4,6 +4,22 @@ This plugin enables developers to use DynamoDB streams locally in their arc or e
 
 Note you'll need to running DynamoDB Local and have it configured in architect, [please refer to my guide](https://martinhicks.net/articles/arc-sandbox-table-streams/). 
 
+
+## v1.1.0 - Breaking change
+
+Previous versions of this plugin invoked the Stream lambda passing `data.Records` as the payload. 
+
+From v1.1.0 onwards, the stream function is now invoked passing the full object returned by `AWS.DynamoDBStreams.getRecords`. Which will return similar to:
+
+```
+{
+  "Records": [...],
+  "NextShardIterator": "arn:aws:dynamodb:ddblocal:000000000000:table/...."
+}
+```
+
+
+
 ## Setup 
 
 __1. Add the dependency to your project__
